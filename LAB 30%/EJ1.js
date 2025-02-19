@@ -20,7 +20,7 @@ class Persona {
     }
 
     set nombre(VerficarNombre) {
-        if (VerficarNombre.length <= 20) {
+        if (typeof VerficarNombre === "string" && VerficarNombre.length <= 20) {
             this._nombre = VerficarNombre;
         } else {
             console.error("El nombre debe tener como máximo 20 caracteres");
@@ -45,9 +45,9 @@ class Persona {
     }
 
     set genero(nuevoGenero) {
-        if (nuevoGenero == "M") {
+        if (nuevoGenero === "M") {
             this._genero = "Masculino";
-        } else if (nuevoGenero == "F") {
+        } else if (nuevoGenero === "F") {
             this._genero = "Femenino";
         } else {
             this._genero = "Genero indefinido";        
