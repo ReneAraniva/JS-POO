@@ -23,7 +23,7 @@ class Persona {
         if (VerficarNombre.length <= 20) {
             this._nombre = VerficarNombre;
         } else {
-            console.log("El nombre debe tener como máximo 20 caracteres");
+            console.error("El nombre debe tener como máximo 20 caracteres");
         }
     }
 
