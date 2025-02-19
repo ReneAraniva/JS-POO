@@ -80,16 +80,17 @@ class Persona {
     console.log(`ID: ${this._id}`);
     console.log(`Nombre: ${this._nombre}`);
     console.log(`Teléfono: ${this._telefono}`);
-    console.log(`Género: ${this._genero}`);
+    console.log(`Género: ${this._genero === "M" ? "Masculino" : "Femenino"}`);
     console.log(`Departamento: ${this._departamento}`);
     }
 
    }
-   const persona1 = new Persona(1, "Juan Pérez", "12345678", "Masculino", "Ventas");
+   
+   const persona1 = new Persona(1, "Juan Pérez", "12345678", "M", "Ventas");
    persona1.mostrarInformacion();
    persona1.id = 2;
    persona1.nombre = "Ana Gómez";
-   persona1.telefono = "98765432";
+   persona1.telefono = "98765432444";
    persona1.genero = "F";
    persona1.departamento = "Recursos Humanos";
    persona1.mostrarInformacion();
