@@ -90,7 +90,7 @@ class Persona {
    persona1.mostrarInformacion();
    persona1.id = 2;
    persona1.nombre = "Ana Gómez";
-   persona1.telefono = "98765432444";
+   persona1.telefono = "98765432";
    persona1.genero = "F";
    persona1.departamento = "Recursos Humanos";
    persona1.mostrarInformacion();
